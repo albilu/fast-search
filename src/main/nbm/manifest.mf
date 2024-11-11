@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+AutoUpdate-Show-In-Client: true
+OpenIDE-Module: org.netbeans.modules.ripgrep
+OpenIDE-Module-Layer: org/netbeans/modules/ripgrep/layer.xml
+OpenIDE-Module-Name: Fast Search
+OpenIDE-Module-Display-Category: Tools
+OpenIDE-Module-Localizing-Bundle: org/netbeans/modules/ripgrep/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0.0
+
+
