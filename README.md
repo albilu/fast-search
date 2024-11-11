@@ -1,6 +1,6 @@
 # fast-search
 
-[![Builds](https://github.com/albilu/fast-search/actions/workflows/builds.yml/badge.svg?branch=master)](https://github.com/albilu/fast-search/actions/workflows/builds.yml) [![CodeQL](https://github.com/albilu/fast-search/actions/workflows/codeql.yml/badge.svg?branch=master)](https://github.com/albilu/fast-search/actions/workflows/codeql.yml) [![Github All Releases](https://img.shields.io/github/downloads/albilu/fast-search/total.svg)]()
+[![Builds](https://github.com/albilu/fast-search/actions/workflows/builds.yml/badge.svg?branch=master)](https://github.com/albilu/fast-search/actions/workflows/builds.yml) [![Github All Releases](https://img.shields.io/github/downloads/albilu/fast-search/total.svg)]()
 
 ### Requirements
 
