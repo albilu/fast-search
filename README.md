@@ -10,7 +10,7 @@
 
 Faster (100x) Search Module for Netbeans based on [Ripgrep](https://github.com/BurntSushi/ripgrep)
 
-https://github.com/user-attachments/assets/0cbab952-f5d2-4272-b3fb-7b2a4b193247
+https://github.com/user-attachments/assets/b2c2b6a5-3783-40e7-9b77-22d97df473b5
 
 ### Installation
 
