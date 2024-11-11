@@ -26,9 +26,9 @@ Please Report any issue at [Issues](https://github.com/albilu/fast-search/issues
 
 Faster (100x) Search Module for Netbeans based on [Ripgrep](https://github.com/BurntSushi/ripgrep)
 
-## Performance Comparaison
+https://github.com/user-attachments/assets/0cbab952-f5d2-4272-b3fb-7b2a4b193247
 
-<video src="_resources/fast_search_perf.mp4" controls></video>
+
 
 ### Sponsor/Contribute/Support
 
