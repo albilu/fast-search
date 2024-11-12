@@ -6,5 +6,63 @@ OpenIDE-Module-Name: Fast Search
 OpenIDE-Module-Display-Category: Tools
 OpenIDE-Module-Localizing-Bundle: org/netbeans/modules/ripgrep/Bundle.properties
 OpenIDE-Module-Specification-Version: 1.0.0
-
-
+OpenIDE-Module-Long-Description: <html><h1 id="fast-search">fast-search</h1>
+    <h2 id="about-fast-search">About fast-search</h2>
+    <p>
+        Faster (100x) Search Module for Netbeans based on
+        <a href="https://github.com/BurntSushi/ripgrep">Ripgrep</a>
+    </p>
+    <video width="700" height="450"
+        src="https://github.com/user-attachments/assets/bbc959c1-a0c8-4baf-ada5-66fe822a9e45">
+    </video>
+    <h3 id="installation">Installation</h3>
+    <ul>
+        <li>
+            <p>
+                Install from Netbeans \
+                <code
+                    >Tools -&gt; Plugins -&gt; Available Plugins -&gt;
+                    Install</code
+                >
+            </p>
+            <ul>
+                <li>
+                    If Plugin not available, register the repository
+                    <code>Tools -&gt; Plugins -&gt; Settings -&gt; Add</code>
+                    <a
+                        href="https://raw.githubusercontent.com/albilu/fast-search/master/updates.xml"
+                        >https://raw.githubusercontent.com/albilu/fast-search/master/updates.xml</a
+                    >
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>
+                Or Download the latest
+                <a href="https://github.com/albilu/fast-search/releases"
+                    >release</a
+                >
+                and install in Netbeans: \
+                <code
+                    >Tools -&gt; Plugins -&gt; Downloaded -&gt; Add Plugins
+                    -&gt; Install</code
+                >
+            </p>
+        </li>
+    </ul>
+    <h3 id="sponsor-contribute-support">Sponsor/Contribute/Support</h3>
+    <p>Support this project growth and maintenance by:</p>
+    <ul>
+        <li><a href="https://github.com/sponsors/albilu">Sponsoring it</a></li>
+        <li>
+            Submiting
+            <a href="https://github.com/albilu/fast-search/pulls">PR</a> for
+            issues in the backlog
+        </li>
+    </ul>
+    <h3 id="bugs">Bugs</h3>
+    <p>
+        Please Report any issue at
+        <a href="https://github.com/albilu/fast-search/issues">Issues</a>.
+    </p>
+    </html>
