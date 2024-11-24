@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE module_updates PUBLIC "-//NetBeans//DTD Autoupdate Catalog 2.8//EN" "http://www.netbeans.org/dtds/autoupdate-catalog-2_8.dtd">
-<module_updates timestamp="00/00/00/03/06/2024">
-    <module codenamebase="io.github.albilu.fastsearch" distribution="https://github.com/albilu/fast-search/releases/download/1.0.0/fastsearch-1.0.0.nbm" downloadsize="133405377" homepage="https://github.com/albilu/fastsearch" moduleauthor="albilu" needsrestart="true" releasedate="2024/06/03">
-        <manifest OpenIDE-Module="io.github.albilu.fastsearch" AutoUpdate-Show-In-Client="true" OpenIDE-Module-Display-Category="Tools" OpenIDE-Module-Implementation-Version="1.0.0" OpenIDE-Module-Name="Fast Search" OpenIDE-Module-Short-Description="Netbeans Faster Search Module based on Ripgrep" OpenIDE-Module-Specification-Version="1.0.0"/>
+<module_updates timestamp="00/00/00/24/11/2024">
+    <module codenamebase="io.github.albilu.fastsearch" distribution="https://github.com/albilu/fast-search/releases/download/1.0.2/fastsearch-1.0.2.nbm" downloadsize="133405377" homepage="https://github.com/albilu/fastsearch" moduleauthor="albilu" needsrestart="true" releasedate="2024/11/24">
+        <manifest OpenIDE-Module="io.github.albilu.fastsearch" AutoUpdate-Show-In-Client="true" OpenIDE-Module-Display-Category="Tools" OpenIDE-Module-Implementation-Version="1.0.2" OpenIDE-Module-Name="Fast Search" OpenIDE-Module-Short-Description="Netbeans Faster Search Module based on Ripgrep" OpenIDE-Module-Specification-Version="1.0.2"/>
     </module>
 </module_updates>

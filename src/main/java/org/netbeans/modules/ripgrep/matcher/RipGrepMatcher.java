@@ -59,7 +59,8 @@ public class RipGrepMatcher extends AbstractMatcher {
                 "org.netbeans.modules.ripgrep",
                 false);
 
-        Collection listFiles = FileUtils.listFiles(bins, new NameFileFilter(new String[]{"rg", "rg.exe"}), new DirectoryFileFilter() {
+        Collection<File> listFiles = FileUtils.listFiles(bins, new NameFileFilter(new String[]{"rg", "rg.exe"}),
+                new DirectoryFileFilter() {
             @Override
             public boolean accept(File file) {
                 return file.isDirectory() && StringUtils.equalsAny(file.getName(), "windows", "linux", "mac");
@@ -68,32 +69,29 @@ public class RipGrepMatcher extends AbstractMatcher {
         });
         switch (Utilities.getOperatingSystem()) {
             case Utilities.OS_LINUX:
-                RG_COMMAND = (String) listFiles.stream()
-                        .map((f) -> {
-                            File file = (File) f;
-                            file.setExecutable(true, true);
-                            return file.getAbsolutePath();
-                        })
-                        .filter((path) -> ((String) path).endsWith("linux/rg")).findFirst().get();
+                RG_COMMAND = listFiles.stream()
+                        .filter(file -> file.getParentFile().getName().equals("linux"))
+                        .map(f -> {
+                            f.setExecutable(true, true);
+                            return f;
+                        }).findFirst().get().getAbsolutePath();
                 break;
 
             case Utilities.OS_WIN_OTHER:
-                RG_COMMAND = (String) listFiles.stream()
-                        .map((f) -> {
-                            File file = (File) f;
-                            file.setExecutable(true, true);
-                            return file.getAbsolutePath();
-                        })
-                        .filter((path) -> ((String) path).endsWith("windows/rg.exe")).findFirst().get();
+                RG_COMMAND = listFiles.stream()
+                        .filter(file -> file.getParentFile().getName().equals("windows"))
+                        .map(f -> {
+                            f.setExecutable(true, true);
+                            return f;
+                        }).findFirst().get().getAbsolutePath();
                 break;
             case Utilities.OS_MAC:
-                RG_COMMAND = (String) listFiles.stream()
-                        .map((f) -> {
-                            File file = (File) f;
-                            file.setExecutable(true, true);
-                            return file.getAbsolutePath();
-                        })
-                        .filter((path) -> ((String) path).endsWith("ios/rg")).findFirst().get();
+                RG_COMMAND = listFiles.stream()
+                        .filter(file -> file.getParentFile().getName().equals("ios"))
+                        .map(f -> {
+                            f.setExecutable(true, true);
+                            return f;
+                        }).findFirst().get().getAbsolutePath();
                 break;
             default:
                 LOG.warning("Couldn't find provided Ripgrep binaries. Swithing to default installed 'rg' command");
@@ -251,10 +249,10 @@ public class RipGrepMatcher extends AbstractMatcher {
             command.add("pcre2");
         }
 
-        //multiline search
+        // multiline search
         if (searchTerm.matches(".*\\n.*")) {
             command.add("--multiline");
-            //command.removeIf((c) -> c.equals("--fixed-strings"));
+            // command.removeIf((c) -> c.equals("--fixed-strings"));
         }
 
         // Set the directory to getProcess in
