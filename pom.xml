@@ -287,7 +287,7 @@
     </dependencies>
     <properties>
         <keystore>target/keystore</keystore>
-        <netbeans.release.version>RELEASE210</netbeans.release.version>
+        <netbeans.release.version>RELEASE230</netbeans.release.version>
         <next.version>1.0.2</next.version>
         <git.url>https://github.com/albilu/${project.name}</git.url>
         <git.link>https://github.com/albilu/${project.name}.git</git.link>
