@@ -8,6 +8,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -265,7 +266,7 @@ public class RipGrepMatcher extends AbstractMatcher {
 
     public BufferedReader getReader() {
         // Read the output from the process
-        return new BufferedReader(new InputStreamReader(this.getProcess().getInputStream()));
+        return new BufferedReader(new InputStreamReader(this.getProcess().getInputStream(), StandardCharsets.UTF_8));
     }
 
     @Override
